@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Castle.Core" Version="4.4.1" />
+    <PackageReference Include="Castle.Windsor" Version="5.1.1" />
+    <PackageReference Include="Castle.Windsor.MsDependencyInjection" Version="3.4.0" />
+    <PackageReference Include="Microsoft.DependencyValidation.Analyzers" Version="0.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tidwit.Libraries.Application\Tidwit.Libraries.Application.csproj" />
+    <ProjectReference Include="..\Tidwit.Libraries.Domain\Tidwit.Libraries.Domain.csproj" />
+    <ProjectReference Include="..\Tidwit.Libraries.Infra.DataAccess\Tidwit.Libraries.Infra.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>
